@@ -16,7 +16,7 @@ public class Zoologico {
 
     public void agregarAnimales(Animal animal) {
         for (Animal a : animales) {
-            if (a.equals(animal)) {
+            if (a.getNombre().equals(animal.getNombre()) && a.getEdad() == animal.getEdad()) {
                 throw new ExceptionAnimalDuplicado();
             }
         }

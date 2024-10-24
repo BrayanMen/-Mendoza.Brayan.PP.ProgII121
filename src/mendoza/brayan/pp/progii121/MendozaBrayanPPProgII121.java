@@ -24,7 +24,11 @@ public class MendozaBrayanPPProgII121 {
             zoo.agregarAnimales(aguila);
             zoo.agregarAnimales(leon);
             zoo.agregarAnimales(serpiente);
+
             zoo.mostrarAnimales();
+            zoo.agregarAnimales(serpiente);
+            zoo.mostrarAnimales();
+
             zoo.vacunarAnimales();
 
         } catch (ExceptionAnimalDuplicado e) {
